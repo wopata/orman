@@ -13,6 +13,10 @@ Documentation
 
 Want to learn how to use ORMAN framework in a few minutes? **Please [read our Wiki](https://github.com/ahmetalpbalkan/orman/wiki).**
 
+In order to build the jar you must use java 1.7, and simply run this : 
+```rake build```
+
+
 Pros & Cons
 ===========
 
