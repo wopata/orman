@@ -28,10 +28,14 @@ public class ResultList {
 		}
 
 		public Object getColumn(String columnName) {
-			return row[columnNameMap.get(columnName)]; // TODO if column does not exist throw xceptn
+			if( columnNameMap.get(columnName) != null){
+				return row[columnNameMap.get(columnName)]; // TODO if column does not exist throw xceptn						
+			}else{
+				System.out.println("Missing column : " + columnName + "ignoring column");
+				return null;
+			}
 		}
 	}
-
 	/**
 	 * Initializes columnNames with given record array.
 	 * 
