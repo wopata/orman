@@ -31,7 +31,7 @@ public class ResultList {
 			if( columnNameMap.get(columnName) != null){
 				return row[columnNameMap.get(columnName)]; // TODO if column does not exist throw xceptn						
 			}else{
-				System.out.println("Missing column : " + columnName + "ignoring column");
+				System.err.println("Missing column : " + columnName + " ignoring column");
 				return null;
 			}
 		}
